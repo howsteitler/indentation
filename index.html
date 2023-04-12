@@ -57,6 +57,29 @@
 				<p class="first-anchor__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
 			</div>
 		</section>
+
+		<section class="second-anchor__section container">
+			<h2 class="second-anchor__title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
+
+			<p class="second-anchor__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
+			<img src="img/zero_last-element_code.jpg" class="second-anchor__img second-anchor__code-img">
+			<img src="img/margin_gray.jpg" class="second-anchor__img second-anchor__receipt-img">
+
+			<p class="second-anchor__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+			<img src="img/margin_selected.jpg" class="second-anchor__img second-anchor__receipt-code-img">
+			<p class="second-anchor__special-text"><b>ВАЖНО</b>: здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+
+			<p class="second-anchor__text">Казалось бы, можно задать отступ параграфу 	<i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+			<p class="second-anchor__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+
+			<img src="img/margin_title.jpg" class="second-anchor__img second-anchor__title-img">
+
+			<p class="second-anchor__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.</p>
+
+			<img src="img/margin_cat-title.jpg" class="second-anchor__img second-anchor__cat-img">
+
+			<p class="second-anchor__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
+		</section>
 	</main>
 </body>
 </html>

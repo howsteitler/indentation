@@ -138,3 +138,38 @@ iframe {
   float: right;
   padding-left: 40px;
 }
+
+
+
+.second-anchor__section {
+  margin-bottom: 50px;
+}
+
+.second-anchor__title {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.second-anchor__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.second-anchor__img {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.second-anchor__receipt-code-img {
+  margin: 0;
+}
+
+.second-anchor__special-text {
+  color: #5e5e5e;
+  width: 1018px;
+  padding: 15px 30px  15px  30px;
+  border: 1px solid #5e5e5e;
+  margin-top: -5px;
+  margin-bottom: 30px;
+}
