@@ -198,3 +198,50 @@ iframe {
 .third-anchor__img:not(:last-child) {
   margin-bottom: 30px;
 }
+
+
+
+.footer__section {
+  max-width: 1140px;
+  max-height: 385px;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 44px;
+  padding-left: 45px;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  list-style: none;
+  margin-left: 45px;
+}
+
+.footer__item:before {
+  content: '—';
+  position: relative;
+  left: -5px;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__item:last-child {
+  margin-bottom: 30px;
+}
+
+.footer__last-item {
+  margin-bottom: 30px;
+}
+
+.footer__text {
+  max-width: 1065px;
+  padding-bottom: 25px;
+}
