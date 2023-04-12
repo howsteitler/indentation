@@ -22,17 +22,17 @@
 			<h2 class="summary__title">Содержание:</h2>
 
 			<ol class="summary__list">
-				<li class="summary__item"><a href="anchor_1" class="summary__link">Отступ задается от предыдущего элемента к следующему</a></li>
+				<li class="summary__item"><a href="#anchor_1" class="summary__link">Отступ задается от предыдущего элемента к следующему</a></li>
 
-				<li class="summary__item"><a href="anchor_2" class="summary__link">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+				<li class="summary__item"><a href="#anchor_2" class="summary__link">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
 
-				<li class="summary__item"><a href="anchor_3" class="summary__link">Для последнего элемента группы отступ обнуляется</a></li>
+				<li class="summary__item"><a href="#anchor_3" class="summary__link">Для последнего элемента группы отступ обнуляется</a></li>
 			</ol>
 		</section>
 	</header>
 
 	<main>
-		<section class="first-anchor__section container" id="#anchor_1">
+		<section class="first-anchor__section container" id="anchor_1">
 			<h2 class="first-anchor__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
 
 			<div class="first-anchor__div first-anchor__first-div">
@@ -58,7 +58,7 @@
 			</div>
 		</section>
 
-		<section class="second-anchor__section container">
+		<section class="second-anchor__section container" id="anchor_2">
 			<h2 class="second-anchor__title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
 
 			<p class="second-anchor__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
@@ -79,6 +79,30 @@
 			<img src="img/margin_cat-title.jpg" class="second-anchor__img second-anchor__cat-img">
 
 			<p class="second-anchor__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
+		</section>
+
+		<section class="third-anchor__section container" id="anchor_3">
+			<h2 class="third-anchor__title">Для последнего элемента группы отступ всегда обнуляется</h2>
+
+			<p class="third-anchor__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+			<p class="third-anchor__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+			<img src="img/zero_last-element.jpg" class="third-anchor__img third-anchor__zero-unselected-img">
+
+			<p class="third-anchor__text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
+			<img src="img/zero_last-element_selected.jpg" class="third-anchor__img third-anchor__zero-selected-img">
+
+			<img src="img/margin_black.jpg" class="third-anchor__img third-anchor__first-black-img">
+			<img src="img/margin_black2.jpg" class="third-anchor__img third-anchor__second-black-img">
+
+			<p class="third-anchor__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+			<img src="img/header_methed.jpg" class="third-anchor__img third-anchor__header-img">
+			<img src="img/header_methed_code.jpg" class="third-anchor__img third-anchor__header-code-img">
+
+			<p class="third-anchor__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+			<img src="img/header_menu-item.jpg" class="third-anchor__img third-anchor__item-img">
+
+			<p class="third-anchor__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+			<img src="img/header_menu-item_last-child.jpg" class="third-anchor__img third-anchor__child-img">
 		</section>
 	</main>
 </body>

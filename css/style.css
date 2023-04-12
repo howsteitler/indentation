@@ -173,3 +173,28 @@ iframe {
   margin-top: -5px;
   margin-bottom: 30px;
 }
+
+
+
+.third-anchor__section {
+  margin-bottom: 50px;
+}
+
+.third-anchor__title {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.third-anchor__text {
+  margin-bottom: 30px;
+}
+
+.third-anchor__img {
+  display: block;
+  margin: auto;
+}
+
+.third-anchor__img:not(:last-child) {
+  margin-bottom: 30px;
+}
