@@ -123,9 +123,18 @@ iframe {
 
 .first-anchor__unselected-img {
   float: left;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .first-anchor__text:not(:last-child) {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.first-anchor__text:last-child {
+  margin-bottom: 115px;
+}
+
+.first-anchor__selected-img {
+  float: right;
+  padding-left: 40px;
 }
