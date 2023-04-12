@@ -108,3 +108,24 @@ iframe {
 .summary__item:last-child {
   padding-bottom: 25px;
 }
+
+
+
+.first-anchor__section {
+  padding-top: 50px;
+}
+
+.first-anchor__title {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.first-anchor__unselected-img {
+  float: left;
+  padding-right: 30px;
+}
+
+.first-anchor__text:not(:last-child) {
+  padding-bottom: 30px;
+}
