@@ -80,7 +80,7 @@ iframe {
 
 
 
-.summary__section {
+.summary__div {
   max-width: 1140px;
   max-height: 215px;
   border-radius: 10px;
@@ -104,8 +104,7 @@ iframe {
 
 .summary__item {
   color: #02535f;
-  margin-bottom: 10px;/*
-  border-bottom: 2px solid #02535f;*/
+  margin-bottom: 10px;
 }
 
 .summary__item:last-child {
@@ -218,15 +217,15 @@ iframe {
 
 
 
-.footer__section {
-  max-width: 1140px;
-  max-height: 385px;
+.footer__div {
   border-radius: 10px;
   background-color: #F1F1F1;
   padding: 0;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 50px;
+  max-width: 1140px;
+  max-height: 385px;
 }
 
 .footer__title {
